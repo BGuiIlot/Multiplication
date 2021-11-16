@@ -1,0 +1,41 @@
+<section class="section">
+    <div class="container">
+    <div class="column">
+
+    <section class="section">
+      <div class="container">
+          <div class="columns is-centered">
+              <div class="column is-half">
+                  <h3 class="title is-3">Les tables de Multiplications souhaité</h3>
+                  <form  [formGroup]="tableForm" (ngSubmit)="submit2()">
+                    <div class="field">
+                        <label class="label">Choisissez un nombre</label>
+                        <div class="control">
+                            <input class="input is-success" formControlName="tableau" type="number" placeholder="Nombre" value="">
+                        </div>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Valider</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
+          </div>
+      </div>
+    </section>
+    </div>
+    </div>
+</section>
+
+
+
+<div *ngIf="submitted">
+        <ul *ngFor="let x of array">
+                <li *ngFor="let number of counter(11) ;let i = index">{{ array[x-1] }} X {{ i }}  = {{ i * array[x-1] }} </li>
+                <li> ------------------ </li>
+    </ul>
+</div>
+
+-->
+

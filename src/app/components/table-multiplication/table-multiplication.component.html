@@ -1,0 +1,18 @@
+<div class="card has-text-centered ">
+    <header class="card-header ">
+        <p class="card-header-title ">
+            Table de {{Nombre}}
+        </p>
+
+    </header>
+    <div class="card-content">
+        <div class="">
+            <ul>
+
+                <li *ngFor="let number of counter(11) ;let i = index">{{ Nombre }} X {{i }} = {{ Nombre*i }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
